@@ -3,262 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>شركة العالمية - أجهزة كهربائية وأدوات منزلية</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>شركة العالمية للأجهزة الكهربائية</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <h1>شركة العالمية</h1>
-                <p class="tagline">أجهزة كهربائية وأدوات منزلية</p>
-            </div>
-            <ul class="nav-links">
-                <li><a href="#home">الرئيسية</a></li>
+    <header>
+        <h1>شركة العالمية</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">الصفحة الرئيسية</a></li>
+                <li><a href="#about">عن الشركة</a></li>
                 <li><a href="#products">المنتجات</a></li>
-                <li><a href="#about">من نحن</a></li>
-                <li><a href="#brands">العلامات التجارية</a></li>
-                <li><a href="#contact">اتصل بنا</a></li>
+                <li><a href="#services">الخدمات</a></li>
+                <li><a href="#contact">التواصل</a></li>
             </ul>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <h2>مرحباً بك في شركة العالمية</h2>
-            <p>أكبر موزع للأجهزة الكهربائية والأدوات المنزلية في محافظة كفر الشيخ</p>
-            <a href="#products" class="btn btn-primary">تصفح المنتجات</a>
-        </div>
-    </section>
-
-    <!-- Products Section -->
-    <section id="products" class="products">
-        <div class="container">
-            <h2>فئات المنتجات</h2>
-            <div class="products-grid">
-                <!-- Electrical Appliances -->
-                <div class="product-card">
-                    <div class="product-icon">
-                        <i class="fas fa-snowflake"></i>
-                    </div>
-                    <h3>الأجهزة الكهربائية</h3>
-                    <ul>
-                        <li>ثلاجات</li>
-                        <li>شاشات</li>
-                        <li>فريزرات</li>
-                        <li>غسلات</li>
-                        <li>مراوح</li>
-                        <li>خلاطات</li>
-                    </ul>
-                </div>
-
-                <!-- Air Conditioning -->
-                <div class="product-card">
-                    <div class="product-icon">
-                        <i class="fas fa-wind"></i>
-                    </div>
-                    <h3>أجهزة التكييف</h3>
-                    <p>موزع معتمد لعلامة <strong>AUX</strong></p>
-                    <ul>
-                        <li>تكييفات مختلفة السعات</li>
-                        <li>خدمات التثبيت والصيانة</li>
-                        <li>قطع الغيار الأصلية</li>
-                        <li>ضمان شامل</li>
-                    </ul>
-                </div>
-
-                <!-- Kitchenware -->
-                <div class="product-card">
-                    <div class="product-icon">
-                        <i class="fas fa-utensils"></i>
-                    </div>
-                    <h3>أدوات المطبخ</h3>
-                    <ul>
-                        <li>أطقم الصيني</li>
-                        <li>أطقم الألمنيوم</li>
-                        <li>أطقم الشربات والكاسات</li>
-                        <li>أطقم الشاي والقهوة</li>
-                    </ul>
-                </div>
-
-                <!-- Home Decor -->
-                <div class="product-card">
-                    <div class="product-icon">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3>تأثيث المنزل</h3>
-                    <ul>
-                        <li>النجف والإضاءة</li>
-                        <li>التحف والديكورات</li>
-                        <li>أطقم العشاء</li>
-                        <li>أطقم الفطار</li>
-                    </ul>
-                </div>
-
-                <!-- Plastic Items -->
-                <div class="product-card">
-                    <div class="product-icon">
-                        <i class="fas fa-box"></i>
-                    </div>
-                    <h3>المنتجات البلاستيكية</h3>
-                    <ul>
-                        <li>أطقم البلاستيك المختلفة</li>
-                        <li>الملامين الأركوبال</li>
-                        <li>الأركوبيركس</li>
-                    </ul>
-                </div>
-
-                <!-- Other Items -->
-                <div class="product-card">
-                    <div class="product-icon">
-                        <i class="fas fa-shopping-bag"></i>
-                    </div>
-                    <h3>منتجات متنوعة</h3>
-                    <ul>
-                        <li>أدوات منزلية متعددة</li>
-                        <li>منتجات مختارة بجودة عالية</li>
-                        <li>أسعار منافسة</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Brands Section -->
-    <section id="brands" class="brands">
-        <div class="container">
-            <h2>العلامات التجارية الموثوقة</h2>
-            <div class="brands-grid">
-                <div class="brand-item">
-                    <h3>العربي جروب</h3>
-                    <p>منتجات كهربائية متميزة</p>
-                </div>
-                <div class="brand-item">
-                    <h3>كريازي</h3>
-                    <p>أجهزة كهربائية متطورة</p>
-                </div>
-                <div class="brand-item">
-                    <h3>ميديا</h3>
-                    <p>حلول منزلية حديثة</p>
-                </div>
-                <div class="brand-item">
-                    <h3>هاير</h3>
-                    <p>أجهزة عالية الجودة</p>
-                </div>
-                <div class="brand-item">
-                    <h3>فريش</h3>
-                    <p>ابتكارات تكنولوجية</p>
-                </div>
-                <div class="brand-item">
-                    <h3>كينود</h3>
-                    <p>منتجات موثوقة</p>
-                </div>
-                <div class="brand-item">
-                    <h3>إل جي</h3>
-                    <p>تكنولوجيا عالمية</p>
-                </div>
-                <div class="brand-item">
-                    <h3>سامسونج</h3>
-                    <p>جودة عالمية معروفة</p>
-                </div>
-                <div class="brand-item">
-                    <h3>AUX</h3>
-                    <p>موزع معتمد لأجهزة التكييف</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2>من نحن</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>شركة العالمية</h3>
-                    <p>شركة متخصصة في بيع الأجهزة الكهربائية والأدوات المنزلية بجودة عالية وأسعار منافسة.</p>
-                    <p>نحن موزع معتمد لعلامة <strong>AUX</strong> لأجهزة التكييف وجميع خدمات التكييف والصيانة.</p>
-                    <p>تقع شركتنا في قلب محافظة كفر الشيخ، مدينة سيدي غازي، بجانب المقف الرئيسي، حيث نقدم أفضل الخدمات والمنتجات.</p>
-                    <p>رسالتنا هي توفير منتجات عالية الجودة بأسعار معقولة وخدمة عملاء متميزة.</p>
-                </div>
-                <div class="about-info">
-                    <div class="info-box">
-                        <h4>موقعنا</h4>
-                        <p>سيدي غازي، كفر الشيخ</p>
-                        <p>أمام المقف الرئيسي</p>
-                    </div>
-                    <div class="info-box">
-                        <h4>ساعات العمل</h4>
-                        <p>السبت - الخميس</p>
-                        <p>9:00 صباحاً - 10:00 مساءً</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="container">
-            <h2>اتصل بنا</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
-                            <h4>الهاتف</h4>
-                            <p><a href="tel:01044111143">01044111143</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-whatsapp"></i>
-                        <div>
-                            <h4>واتس آب</h4>
-                            <p><a href="https://wa.me/201050509779" target="_blank">01050509779</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
-                            <h4>الموقع</h4>
-                            <p>سيدي غازي، محافظة كفر الشيخ</p>
-                            <p>أمام المقف الرئيسي</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="social-media">
-                    <h4>تابعنا على السوشيال ميديا</h4>
-                    <div class="social-links">
-                        <a href="https://www.facebook.com/profile_status/" target="_blank" class="social-btn facebook">
-                            <i class="fab fa-facebook-f"></i>
-                            <span>Facebook</span>
-                        </a>
-                        <a href="https://www.tiktok.com/@alhazemgurob10" target="_blank" class="social-btn tiktok">
-                            <i class="fab fa-tiktok"></i>
-                            <span>TikTok</span>
-                        </a>
-                        <a href="https://www.instagram.com/alhazem2025/" target="_blank" class="social-btn instagram">
-                            <i class="fab fa-instagram"></i>
-                            <span>Instagram</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 شركة العالمية. جميع الحقوق محفوظة.</p>
-            <p>تم تطويره بعناية لتقديم أفضل الخدمات</p>
-        </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>مرحباً بكم في شركة العالمية</h2>
+            <p>نشاط الشركة: بيع جميع الأجهزة الكهربائية.</p>
+        </section>
+        <section id="about">
+            <h2>عن الشركة</h2>
+            <p>شركة العالمية متخصصة في بيع الأجهزة الكهربائية والأدوات المنزلية بجودة عالية وأسعار منافسة. مقرنا في محافظة كفر الشيخ، مدينة سيدي غازي، أمام الموقف الرئيسي.</p>
+        </section>
+        <section id="products">
+            <h2>المنتجات</h2>
+            <ul>
+                <li>ثلاجات</li>
+                <li>شاشات</li>
+                <li>فريزرات</li>
+                <li>غسالات</li>
+                <li>مراوح</li>
+                <li>خلاطات</li>
+            </ul>
+        </section>
+        <section id="services">
+            <h2>خدمات التكييف</h2>
+            <p>موزع معتمد لتكييف ماركة Aux وجميع خدمات التكييف.</p>
+        </section>
+        <section id="contact">
+            <h2>معلومات الاتصال</h2>
+            <p>العنوان: محافظة كفرالشيخ، مدينة سيدي غازي، أمام الموقف الرئيسي</p>
+            <p>تليفون: <a href="tel:01044111143">01044111143</a></p>
+            <p>واتساب: <a href="https://wa.me/201050509779" target="_blank" rel="noopener">01050509779</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>تواصل معنا عبر:</p>
+        <ul>
+            <li><a href="https://www.facebook.com/profile_status/" target="_blank" rel="noopener">فيس بوك</a></li>
+            <li><a href="https://www.tiktok.com/@alhazemgurob10" target="_blank" rel="noopener">تيك توك</a></li>
+            <li><a href="https://www.instagram.com/alhazem2025/" target="_blank" rel="noopener">إنستجرام</a></li>
+        </ul>
+        <p>&copy; 2026 شركة العالمية. جميع الحقوق محفوظة.</p>
     </footer>
-
-    <script src="js/script.js"></script>
 </body>
 </html>
