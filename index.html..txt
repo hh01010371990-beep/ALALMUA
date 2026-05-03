@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>العالمية للأجهزة والتكييف - المستشار الذكي</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        :root { --primary: #002347; --accent: #d4af37; }
+        .bg-custom-blue { background-color: var(--primary); }
+        .text-accent { color: var(--accent); }
+        .border-accent { border-color: var(--accent); }
+        .hero-gradient { background: linear-gradient(135deg, var(--primary) 0%, #004080 100%); }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <header class="hero-gradient text-white p-6 shadow-xl border-b-4 border-accent text-center">
+        <h1 class="text-4xl font-black text-accent mb-2">العالمية</h1>
+        <p class="text-sm opacity-90">الوكيل المعتمد لأجهزة AUX - كفر الشيخ - سيدي غازي</p>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <!-- قسم حاسبة التوفير الذكية -->
+        <section class="bg-white rounded-3xl p-8 shadow-lg mb-12 border-r-8 border-custom-blue">
+            <h2 class="text-2xl font-bold mb-4 text-custom-blue italic">⚡ محاكاة توفير الكهرباء (AUX Inverter)</h2>
+            <p class="mb-4">عند شرائك تكييف AUX انفرتر، ستحصل على توفير يصل إلى <span class="font-bold text-green-600">60%</span> من الفاتورة.</p>
+            <div class="bg-blue-50 p-4 rounded-xl text-center font-bold text-blue-900 border border-blue-200">
+                قيمة التوفير السنوي المتوقع: 4,200 ج.م تقريباً
+            </div>
+        </section>
+
+        <!-- قسم المعلومات والمنتجات -->
+        <section id="products" class="grid md:grid-cols-2 gap-8 mb-12">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <h3 class="font-bold text-xl mb-4 text-custom-blue">أحدث موديلات 2026</h3>
+                <ul class="space-y-2 text-sm">
+                    <li>• <b>AUX Ultra-Cool:</b> تبريد ذكي وتعقيم بالـ UV.</li>
+                    <li>• <b>Samsung AI:</b> توفير ذكي للكهرباء.</li>
+                    <li>• <b>Fresh & Toshiba:</b> قوة تحمل فائقة.</li>
+                </ul>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <h3 class="font-bold text-xl mb-4 text-custom-blue">نصائح الخبراء للشراء</h3>
+                <p class="text-sm leading-relaxed">تأكد دائماً من اختيار القدرة المناسبة لمساحة الغرفة؛ فالتكييف ذو القدرة الصحيحة يعيش أطول ويوفر أكثر في الاستهلاك.</p>
+            </div>
+        </section>
+
+        <!-- بوابة التواصل السريع -->
+        <section class="text-center py-8">
+            <h2 class="text-2xl font-bold mb-6 text-custom-blue">تواصل معنا الآن 📱</h2>
+            <div class="flex justify-center space-x-reverse space-x-8">
+                <div class="p-4 bg-white rounded-2xl shadow-md border border-accent">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=tel:01044111143" alt="الاتصال">
+                    <p class="mt-2 font-bold text-xs">مسح للاتصال</p>
+                </div>
+                <div class="p-4 bg-white rounded-2xl shadow-md border border-green-500">
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://wa.me/201050509779" alt="واتساب">
+                    <p class="mt-2 font-bold text-xs text-green-600">مسح للواتساب</p>
+                </div>
+            </div>
+            <div class="mt-8">
+                <a href="https://maps.google.com/?q=سيدي+غازي+كفر+الشيخ" class="bg-custom-blue text-white px-10 py-3 rounded-full font-bold shadow-lg">فتح الموقع في سيدي غازي 🗺️</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-custom-blue text-white p-6 text-center mt-12 border-t-4 border-accent">
+        <p>جميع الحقوق محفوظة &copy; 2026 العالمية - وكيل AUX المعتمد</p>
+    </footer>
+</body>
+</html>
