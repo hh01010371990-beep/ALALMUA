@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --navy: #0B192C;
+  --gold: #DDA853;
+  --paper: #FAFAFA;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: #1E2022;
+  font-family: Arial, "Cairo", sans-serif;
+}
+button, input, select, textarea { font: inherit; }
+
+.container-wide { width: min(1200px, calc(100% - 32px)); margin-inline: auto; }
+.card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(11,25,44,.06);
+}
+.gold-line { height: 4px; background: var(--gold); }

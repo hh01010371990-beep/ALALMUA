@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مجموعة العالمية للاستثمار والتجارة | الدليل المرجعي والخدمات الشاملة</title>
+    <!-- Font Awesome لأيقونات التواصل الاجتماعي والأدوات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Cairo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #0B192C; /* الكحلي الداكن الفاخر */
+            --accent-color: #DDA853;  /* الذهبي الملكي */
+            --text-dark: #1E2022;
+            --text-light: #F4F6F9;
+            --bg-light: #FAFAFA;
+            --card-bg: #FFFFFF;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.8;
+        }
+
+        /* الهيدر وقسم الترحيب */
+        header {
+            background: linear-gradient(135deg, var(--primary-color) 0%, #1e3557 100%);
+            color: var(--text-light);
+            padding: 70px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-color);
+            position: relative;
+        }
+
+        .logo-container h1 {
+            font-size: 3rem;
+            font-weight: 900;
+            letter-spacing: 1px;
+            color: #FFFFFF;
+            margin-bottom: 12px;
+        }
+
+        .logo-container h1 span {
+            color: var(--accent-color);
+        }
+
+        .tagline {
+            font-size: 1.25rem;
+            color: #d1d5db;
+            max-width: 750px;
+            margin: 0 auto 30px auto;
+            font-weight: 400;
+        }
+
+        /* العناوين الرئيسية للأقسام */
+        .section-title {
+            text-align: center;
+            margin: 60px 0 30px 0;
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            position: relative;
+            font-weight: 900;
+        }
+
+        .section-title::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--accent-color);
+            margin: 10px auto 0 auto;
+            border-radius: 2px;
+        }
+
+        .section-desc {
+            text-align: center;
+            color: #6b7280;
+            max-width: 600px;
+            margin: -20px auto 40px auto;
+            font-size: 1rem;
+        }
+
+        /* حاوية التوكلات والشركات المرجعية */
+        .brands-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .brand-card {
+            background-color: var(--card-bg);
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            padding: 30px 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: var(--text-dark);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .brand-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-color);
+            box-shadow: 0 10px 15px -3px rgba(11, 25, 44, 0.1);
+        }
+
+        .brand-card i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .brand-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .brand-card p {
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+
+        /* جدول المقارنة الفنية الفاخر */
+        .table-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            text-align: right;
+            min-width: 800px;
+        }
+
+        th, td {
+            padding: 15px 20px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            font-weight: 700;
+        }
+
+        th.highlight-th {
+            background-color: #172c47;
+            color: var(--accent-color);
+        }
+
+        tr:hover {
+            background-color: #f9fafb;
+        }
+
+        .accent-td {
+            font-weight: 700;
+            color: var(--primary-color);
+            background-color: rgba(221, 168, 83, 0.05);
+        }
+
+        /* ركن الإرشادات والنصائح */
+        .advice-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .advice-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+            border-right: 5px solid var(--accent-color);
+        }
+
+        .advice-card h3 {
+            font-size: 1.3rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .advice-card h3 i {
+            color: var(--accent-color);
+        }
+
+        .advice-card p {
+            font-size: 0.95rem;
+            color: #4b5563;
+            line-height: 1.7;
+        }
+
+        /* قسم رفايع ومستلزمات المطبخ */
+        .kitchen-section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .kitchen-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 20px;
+        }
+
+        .kitchen-item {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            border-right: 4px solid var(--accent-color);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.03);
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .kitchen-item:hover {
+            transform: translateY(-3px);
+        }
+
+        .kitchen-item-icon {
+            background-color: #fef9c3;
+            color: var(--accent-color);
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 1.4rem;
+        }
+
+        .kitchen-item-details h3 {
+            font-size: 1.15rem;
+            color: var(--primary-color);
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+
+        .kitchen-item-details p {
+            font-size: 0.9rem;
+            color: #6b7280;
+            line-height: 1.6;
+        }
+
+        /* قسم طلب المبيعات والحجز الذكي */
+        .form-section {
+            background-color: #FFFFFF;
+            max-width: 700px;
+            margin: 60px auto;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.05);
+            border-top: 4px solid var(--accent-color);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+
+        .form-group input, .form-group select, .form-group textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+            background-color: #f9fafb;
+        }
+
+        .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            background-color: #FFFFFF;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 14px;
+            background-color: var(--primary-color);
+            color: #FFFFFF;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .submit-btn:hover {
+            background-color: #152942;
+        }
+
+        /* أزرار الاتصال السريع والتواصل الاجتماعي */
+        .quick-contact-bar {
+            background-color: #f3f4f6;
+            padding: 20px;
+            text-align: center;
+            border-top: 1px solid #e5e7eb;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .contact-buttons-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .contact-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            border-radius: 50px;
+            color: #FFFFFF;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: transform 0.2s;
+        }
+
+        .contact-btn:hover {
+            transform: scale(1.05);
+        }
+
+        .btn-whatsapp { background-color: #25D366; }
+        .btn-phone { background-color: #007bff; }
+        .btn-facebook { background-color: #1877F2; }
+
+        /* الفوتر وشبكة الدعم */
+        footer {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 0.95rem;
+        }
+
+        footer p {
+            color: #9ca3af;
+        }
+
+        .footer-logo {
+            color: var(--accent-color);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+
+        /* التجاوب مع الشاشات الصغيرة */
+        @media (max-width: 768px) {
+            .logo-container h1 { font-size: 2.2rem; }
+            .form-section { margin: 30px 15px; padding: 25px; }
+            .kitchen-item { flex-direction: column; align-items: center; text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- قسم الهيدر والترحيب الرئيسي -->
+    <header>
+        <div class="logo-container">
+            <h1>مجموعة <span>العالمية</span></h1>
+            <p class="tagline">للاستثمار والتجارة | الموزع المعتمد والوجهة الشاملة للتكييفات، الأجهزة المنزلية الكبرى، رفايع المطبخ العصري، وأنظمة الإضاءة الفاخرة لعام 2026.</p>
+        </div>
+    </header>
+
+    <!-- شريط الاتصال السريع والدعم الفوري للعملاء -->
+    <div class="quick-contact-bar">
+        <div class="contact-buttons-container">
+            <!-- رابط الواتساب الذكي بنص ترحيبي مشفر لتسهيل بدء الاستفسار -->
+            <a href="https://wa.me/201000000000?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%20%D8%A7%D9%84%D8%B9%D8%A7%D9%8ال%D9%85%D9%8A%D8%A9%D8%8C%20%D8%A3%D9%88%D8%AF%20%D8%A7%D9%84%D8%A7%D8%Bاستفسار%20%D8%B9%D9%86%20%D8%A7%D9%84%D9%85%D9%86%D8%AA%D8%AC%D8%A7%D8%AA" class="contact-btn btn-whatsapp" target="_blank">
+                <i class="fab fa-whatsapp"></i> خدمة العملاء الفورية والمبيعات
+            </a>
+            <a href="tel:+201000000000" class="contact-btn btn-phone">
+                <i class="fas fa-phone-alt"></i> اتصال هاتفي مباشر
+            </a>
+            <a href="https://facebook.com/YourPage" class="contact-btn btn-facebook" target="_blank">
+                <i class="fab fa-facebook-f"></i> صفحتنا الرسمية على فيسبوك
+            </a>
+        </div>
+    </div>
+
+    <!-- 1. قسم دليل الشركات والتوكيلات العالمية المرجعية (Brand Shadows) -->
+    <section>
+        <h2 class="section-title">شركاء النجاح والتوكيلات العالمية</h2>
+        <p class="section-desc">اضغط على أي علامة تجارية للانتقال مباشرة إلى مراجعة الكتالوج والمواصفات الفنية المعتمدة من المصنع الأصلي.</p>
+        <div class="brands-container">
+            <a href="https://auxairconditioner.com" class="brand-card" target="_blank">
+                <i class="fas fa-snowflake"></i>
+                <h3>AUX Egypt</h3>
+                <p>الوكيل والموزع المعتمد لأحدث تكييفات الإنفرتر الموفرة للطاقة</p>
+            </a>
+            <a href="https://www.lg.com/eg" class="brand-card" target="_blank">
+                <i class="fas fa-tv"></i>
+                <h3>LG Global</h3>
+                <p>مرجع الشاشات الذكية الفائقة والأجهزة المنزلية المبتكرة</p>
+            </a>
+            <a href="https://sharp-world.com" class="brand-card" target="_blank">
+                <i class="fas fa-blender"></i>
+                <h3>SHARP</h3>
+                <p>التكنولوجيا اليابانية الرائدة في الثلاجات والأجهزة المنزلية</p>
+            </a>
+            <a href="https://www.toshiba.com" class="brand-card" target="_blank">
+                <i class="fas fa-door-open"></i>
+                <h3>TOSHIBA</h3>
+                <p>العملاق المعتمد للثلاجات والغسالات أوتوماتيك فائقة التحمل</p>
+            </a>
+            <a href="https://www.carrier.com/egypt" class="brand-card" target="_blank">
+                <i class="fas fa-wind"></i>
+                <h3>Carrier</h3>
+                <p>أنظمة التكييف والتحمل الشاق للمساحات الكبيرة والمنشآت</p>
+            </a>
+        </div>
+    </section>
+
+    <!-- 2. قسم جدول المقارنة الفنية الفاخر (مستشار العميل الافتراضي) -->
+    <section>
+        <h2 class="section-title">جدول المقارنة الفنية لأجهزة التكييف</h2>
+        <p class="section-desc">تحليل دقيق وموضوعي لمساعدتكم في اتخاذ قرار الشراء الصحيح بناءً على الميزانية وكفاءة التبريد الاستوائي.</p>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>وجه المقارنة الفني</th>
+                        <th class="highlight-th"><i class="fas fa-star"></i> تكييفات AUX</th>
+                        <th>تكييفات Sharp</th>
+                        <th>تكييفات LG</th>
+                        <th>تكييفات Carrier</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-weight: bold;">المنشأ والتجميع</td>
+                        <td class="accent-td">صيني (تكنولوجيا عليا فاخرة)</td>
+                        <td>ياباني (تجميع محلي معتمد)</td>
+                        <td>كوري (تجميع إقليمي متطور)</td>
+                        <td>أمريكي (تجميع مصري شاق)</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">توفير الطاقة (Inverter)</td>
+                        <td class="accent-td">توفير ذكي فائق يصل إلى 60%</td>
+                        <td>توفير ممتاز بنظام ECO</td>
+                        <td>معدلات توفير مركبة عالية جداً</td>
+                        <td>توفير قياسي مستقر وعملي</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">التحمل الاستوائي (T3)</td>
+                        <td class="accent-td">ممتاز (ضاغط T3 المطور للأجواء الحارة)</td>
+                        <td>قوي جداً ومقاوم للظروف الشاقة</td>
+                        <td>ممتاز بالعاكس المزدوج المتطور</td>
+                        <td>قوي ومصمم للمساحات المفتوحة</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: bold;">المستوى السعري للمستهلك</td>
+                        <td class="accent-td">اقتصادي ومنافس ومناسب للميزانية</td>
+                        <td>مرتفع (شريحة فاخرة)</td>
+                        <td>مرتفع جداً (تكنولوجيا ذكية)</td>
+                        <td>فوق المتوسط إلى مرتفع</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- 3. قسم رفايع ومستلزمات المطبخ العصري (القسم الجديد المدمج بالكامل) -->
+    <section class="kitchen-section">
+        <h2 class="section-title">رفايع ومستلزمات المطبخ العصري والطهي</h2>
+        <p class="section-desc">تشكيلة متكاملة من الأدوات والرفايع الصغيرة التي لا غنى عنها في كل مطبخ حديث لتسهيل عملية التحضير اليومية.</p>
+        <div class="kitchen-grid">
+            <!-- كارت السكاكين والبلانشات -->
+            <div class="kitchen-item">
+                <div class="kitchen-item-icon"><i class="fas fa-knife"></i></div>
+                <div class="kitchen-item-details">
+                    <h3>أطقم السكاكين والبلانشات</h3>
+                    <p>سكاكين حادة ومقاومة للصدأ، مع ألواح تقطيع (بلانشات) خشبية وصحية مضادة للبكتيريا لراحة تامة أثناء التحضير اليومي.</p>
+                </div>
+            </div>
+            <!-- كارت القطاعات -->
+            <div class="kitchen-item">
+                <div class="kitchen-item-icon"><i class="fas fa-utensils"></i></div>
+                <div class="kitchen-item-details">
+                    <h3>القطاعات والمبشرات الذكية</h3>
+                    <p>قطاعات خضار وفاكهة متعددة المهام، ومبشرات يدوية حادة مصممة بدقة لتوفير الوقت والجهد داخل مطبخك.</p>
+                </div>
+            </div>
+            <!-- كارت المضرب اليدوي -->
+            <div class="kitchen-item">
+                <div class="kitchen-item-icon"><i class="fas fa-blender"></i></div>
+                <div class="kitchen-item-details">
+                    <h3>المضارب والأدوات اليدوية</h3>
+                    <p>مضارب بيض يدوية من الستانلس ستيل الفاخر، وملاعق وأدوات تقليب سيليكون حرارية آمنة تماماً على الأواني وأطقم الجرانيت.</p>
+                </div>
+            </div>
+            <!-- كارت أطقم التوابل -->
+            <div class="kitchen-item">
+                <div class="kitchen-item-icon"><i class="fas fa-mortar-pestle"></i></div>
+                <div class="kitchen-item-details">
+                    <h3>أطقم التوابل والمنظمات</h3>
+                    <p>حاويات وأطقم توابل زجاجية وإكريليك دوارة بتصميمات عصرية تحافظ على جودة النكهات وتضفي لمسة جمالية ومنظمة على منزلك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. ركن الإرشادات وطرق الاستخدام الصحيحة للأجهزة -->
+    <section>
+        <h2 class="section-title">ركن الإرشادات ونصائح الخبراء العملاء</h2>
+        <p class="section-desc">تعليمات التشغيل الصحيحة الموصى بها من مهندسي ومستشاري العالمية لضمان أطول عمر افتراضي للمنتجات.</p>
+        <div class="advice-container">
+            <div class="advice-card">
+                <h3><i class="fas fa-lightbulb"></i> تشغيل التكييفات الاقتصادي</h3>
+                <p>ينصح دائماً بضبط تكييفات الإنفرتر (خاصة AUX) على درجة حرارة 24°C؛ حيث تمنحك هذه الدرجة أفضل معدل تبريد مريح وصحي للمكان مع تحقيق أعلى كفاءة وتوفير في فاتورة الكهرباء.</p>
+            </div>
+            <div class="advice-card">
+                <h3><i class="fas fa-shield-alt"></i> سلامة الأجهزة الكهربائية الكبرى</h3>
+                <p>تجنب وضع الثلاجات ملاصقة تماماً للجدران؛ احرص على ترك مسافة أمان لا تقل عن 15 سم من الخلف لتهوية الضاغط، ويفضل دائماً استخدام مشترك حماية منظم لمنع تذبذب التيار الكهربائي.</p>
+            </div>
+            <div class="advice-card">
+                <h3><i class="fas fa-hand-holding-heart"></i> الحفاظ على أدوات المطبخ والطهي</h3>
+                <p>عند الطهي بأطقم الجرانيت أو التيفال، تجنب نهائياً استخدام الملاعق المعدنية الحادة لمنع خدش الطبقة الواقية، ولا تقم بغسل الأواني بالماء البارد وهي ساخنة فوراً لحمايتها من التلف.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. قسم طلب المنتجات الاستباقي ونموذج الحجز الذكي المطور -->
+    <section class="form-section" id="order-form">
+        <h2 style="text-align: center; margin-bottom: 20px; color: var(--primary-color);">طلب عرض أسعار أو حجز جهاز / منتج</h2>
+        <p style="text-align: center; color: #6b7280; margin-bottom: 30px;">قم بملء البيانات وسيقوم مستشار المبيعات بالتواصل معك فوراً لتأكيد تفاصيل الشحن والتسليم.</p>
+        
+        <!-- ملحوظة: استبدل YOUR_ENDPOINT_ID بمعرف Formspree الخاص بك لتلقي الرسائل -->
+        <form action="https://formspree.io/f/YOUR_ENDPOINT_ID" method="POST">
+            <div class="form-group">
+                <label for="name">الاسم الكريم:</label>
+                <input type="text" id="name" name="name" placeholder="أدخل اسمك بالكامل" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">رقم الهاتف الفعال للتواصل:</label>
+                <input type="tel" id="phone" name="phone" placeholder="مثال: 010XXXXXXXX" required>
+            </div>
+
+            <div class="form-group">
+                <label for="category">القسم المطلوب استهدافه:</label>
+                <select id="category" name="category" required>
+                    <option value="" disabled selected>اختر القسم المرجع...</option>
+                    <option value="HVAC - AUX">تكييفات (موزع معتمد AUX)</option>
+                    <option value="Home Appliances">أجهزة منزلية وكهربائية (LG, Sharp, Toshiba)</option>
+                    <option value="Kitchenware">رفايع وأدوات المطبخ العصرية (سكاكين، قطاعات، منظمات)</option>
+                    <option value="Luxury Lighting">ثريات وإضاءة مودرن فاخرة</option>
+                    <option value="Other">استفسار تجاري عام</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">تفاصيل الطلب أو الاستفسار:</label>
+                <textarea id="message" name="message" rows="4" placeholder="اكتب الموديلات، الأدوات أو الملاحظات الفنية التي تبحث عنها..." required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">إرسال الطلب وحجز موعد اتصالي</button>
+        </form>
+    </section>
+
+    <!-- الفوتر الرسمي والشامل للمجموعة -->
+    <footer>
+        <div class="footer-logo">مجموعة العالمية للاستثمار والتجارة</div>
+        <p style="margin-bottom: 10px;">جميع الحقوق محفوظة © 2026 | مبيعات التكييف والأجهزة المنزلية والرفايع الفاخرة</p>
+        <p style="font-size: 0.85rem; color: #6b7280;">الصفحة المرجعية الاستشارية الرسمية المعتمدة لخدمة عملاء المجموعة</p>
+    </footer>
+
+</body>
+</html>
