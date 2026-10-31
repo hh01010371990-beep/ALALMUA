@@ -1,0 +1,5 @@
+# Deploy this platform as its own Netlify project with base directory "platform".
+# The repository root keeps serving the existing static page.
+[build]
+  command = "npm run build"
+  publish = ".next"
